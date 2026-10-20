@@ -1,0 +1,2291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version V.04.00, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.accessiblecaption
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.activelink
+{
+  color: #800080;
+}
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: 7pt;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.heading2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.heading3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.heading4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.heading5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.heading6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.link
+{
+  color: #0000FF;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 8pt;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 12pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.visitedlink
+{
+  color: #800080;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Anova UI', Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: 9pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: 8pt;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+</head>
+<body class="body">
+
+<div class="branch">
+<a name="IDX"></a>
+<div>
+<map name="SaturdayAM1">
+<Area shape="poly" alt=" trackstart = 8:30 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" title=" trackstart = 8:30 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" coords="69,126,69,151,576,151,576,126,69,126,"/>
+<Area shape="poly" alt=" trackstart = 8:30 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" title=" trackstart = 8:30 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" coords="69,246,69,271,636,271,636,246,69,246,"/>
+<Area shape="poly" alt=" trackstart = 8:30 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" title=" trackstart = 8:30 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" coords="69,366,69,391,657,391,657,366,69,366,"/>
+<Area shape="poly" alt=" trackstart = 8:30 
+ tracksb = Intermediate &amp; Advanced Coding - Conf. Ctr., 206" title=" trackstart = 8:30 
+ tracksb = Intermediate &amp; Advanced Coding - Conf. Ctr., 206" coords="69,486,69,511,651,511,651,486,69,486,"/>
+<Area shape="poly" alt=" trackstart = 8:30 
+ tracksb = Hands on Workshops - Conf. Ctr., Auditorium" title=" trackstart = 8:30 
+ tracksb = Hands on Workshops - Conf. Ctr., Auditorium" coords="69,605,69,630,598,630,598,605,69,605,"/>
+<Area shape="poly" alt=" trackstart = 8:30 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" title=" trackstart = 8:30 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" coords="69,725,69,750,575,750,575,725,69,725,"/>
+<Area shape="poly" alt=" trackstart = 8:30 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" title=" trackstart = 8:30 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" coords="69,845,69,870,803,870,803,845,69,845,"/>
+<Area shape="poly" alt=" trackstart = 8:30 
+ tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206" title=" trackstart = 8:30 
+ tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206" coords="69,965,69,990,621,990,621,965,69,965,"/>
+<Area shape="poly" alt=" trackstart = 8:30 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" title=" trackstart = 8:30 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" coords="69,1084,69,1109,592,1109,592,1084,69,1084,"/>
+<Area shape="poly" alt=" stime = 11:00 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" title=" stime = 11:00 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" coords="1401,160,1401,188,1577,188,1577,160,1401,160,"/>
+<Area shape="poly" alt=" stime = 10:00 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" title=" stime = 10:00 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" coords="868,160,868,188,1138,188,1138,160,868,160,"/>
+<Area shape="poly" alt=" stime = 9:00 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" title=" stime = 9:00 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" coords="336,160,336,188,597,188,597,160,336,160,"/>
+<Area shape="poly" alt=" stime = 8:30 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" title=" stime = 8:30 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" coords="69,146,69,188,262,188,262,146,69,146,"/>
+<Area shape="poly" alt=" stime = 11:00 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" title=" stime = 11:00 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" coords="1401,280,1401,308,1578,308,1578,280,1401,280,"/>
+<Area shape="poly" alt=" stime = 10:30 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" title=" stime = 10:30 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" coords="1135,266,1135,308,1308,308,1308,266,1135,266,"/>
+<Area shape="poly" alt=" stime = 10:00 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" title=" stime = 10:00 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" coords="868,280,868,308,1037,308,1037,280,868,280,"/>
+<Area shape="poly" alt=" stime = 9:30 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" title=" stime = 9:30 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" coords="602,266,602,308,774,308,774,266,602,266,"/>
+<Area shape="poly" alt=" stime = 9:00 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" title=" stime = 9:00 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" coords="336,266,336,308,516,308,516,266,336,266,"/>
+<Area shape="poly" alt=" stime = 11:00 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" title=" stime = 11:00 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" coords="1401,386,1401,428,1582,428,1582,386,1401,386,"/>
+<Area shape="poly" alt=" stime = 10:00 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" title=" stime = 10:00 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" coords="868,386,868,428,1144,428,1144,386,868,386,"/>
+<Area shape="poly" alt=" stime = 9:30 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" title=" stime = 9:30 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" coords="602,386,602,428,799,428,799,386,602,386,"/>
+<Area shape="poly" alt=" stime = 8:30 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" title=" stime = 8:30 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" coords="69,386,69,428,360,428,360,386,69,386,"/>
+<Area shape="poly" alt=" stime = 9:30 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Conf. Ctr., 206" title=" stime = 9:30 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Conf. Ctr., 206" coords="602,520,602,548,876,548,876,520,602,520,"/>
+<Area shape="poly" alt=" stime = 8:30 AM 
+ tracksb = Hands on Workshops - Conf. Ctr., Auditorium" title=" stime = 8:30 AM 
+ tracksb = Hands on Workshops - Conf. Ctr., Auditorium" coords="69,639,69,667,325,667,325,639,69,639,"/>
+<Area shape="poly" alt=" stime = 11:00 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" title=" stime = 11:00 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" coords="1401,759,1401,787,1578,787,1578,759,1401,759,"/>
+<Area shape="poly" alt=" stime = 10:30 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" title=" stime = 10:30 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" coords="1135,745,1135,787,1327,787,1327,745,1135,745,"/>
+<Area shape="poly" alt=" stime = 10:00 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" title=" stime = 10:00 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" coords="868,745,868,787,1051,787,1051,745,868,745,"/>
+<Area shape="poly" alt=" stime = 9:30 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" title=" stime = 9:30 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" coords="602,745,602,787,798,787,798,745,602,745,"/>
+<Area shape="poly" alt=" stime = 9:00 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" title=" stime = 9:00 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" coords="336,745,336,787,517,787,517,745,336,745,"/>
+<Area shape="poly" alt=" stime = 11:00 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" title=" stime = 11:00 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" coords="1401,879,1401,907,1575,907,1575,879,1401,879,"/>
+<Area shape="poly" alt=" stime = 10:00 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" title=" stime = 10:00 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" coords="868,879,868,907,1151,907,1151,879,868,879,"/>
+<Area shape="poly" alt=" stime = 9:00 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" title=" stime = 9:00 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" coords="336,879,336,907,534,907,534,879,336,879,"/>
+<Area shape="poly" alt=" stime = 8:30 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" title=" stime = 8:30 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" coords="69,879,69,907,242,907,242,879,69,879,"/>
+<Area shape="poly" alt=" stime = 10:30 AM 
+ tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206" title=" stime = 10:30 AM 
+ tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206" coords="1135,999,1135,1027,1317,1027,1317,999,1135,999,"/>
+<Area shape="poly" alt=" stime = 8:30 AM 
+ tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206" title=" stime = 8:30 AM 
+ tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206" coords="69,999,69,1027,345,1027,345,999,69,999,"/>
+<Area shape="poly" alt=" stime = 11:00 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" title=" stime = 11:00 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" coords="1401,1105,1401,1147,1560,1147,1560,1105,1401,1105,"/>
+<Area shape="poly" alt=" stime = 10:30 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" title=" stime = 10:30 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" coords="1135,1105,1135,1147,1320,1147,1320,1105,1135,1105,"/>
+<Area shape="poly" alt=" stime = 10:00 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" title=" stime = 10:00 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" coords="868,1119,868,1147,1049,1147,1049,1119,868,1119,"/>
+<Area shape="poly" alt=" stime = 9:30 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" title=" stime = 9:30 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" coords="602,1105,602,1147,784,1147,784,1105,602,1105,"/>
+<Area shape="poly" alt=" stime = 8:30 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" title=" stime = 8:30 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" coords="69,1119,69,1147,337,1147,337,1119,69,1119,"/>
+<Area shape="poly" alt=" stime = 11:00 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" title=" stime = 11:00 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" coords="1401,200,1401,215,1466,215,1466,200,1401,200,"/>
+<Area shape="poly" alt=" stime = 10:00 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" title=" stime = 10:00 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" coords="868,200,868,215,933,215,933,200,868,200,"/>
+<Area shape="poly" alt=" stime = 9:00 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" title=" stime = 9:00 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" coords="336,200,336,215,393,215,393,200,336,200,"/>
+<Area shape="poly" alt=" stime = 8:30 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" title=" stime = 8:30 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" coords="69,200,69,215,126,215,126,200,69,200,"/>
+<Area shape="poly" alt=" stime = 11:00 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" title=" stime = 11:00 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" coords="1401,320,1401,335,1466,335,1466,320,1401,320,"/>
+<Area shape="poly" alt=" stime = 10:30 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" title=" stime = 10:30 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" coords="1135,320,1135,335,1200,335,1200,320,1135,320,"/>
+<Area shape="poly" alt=" stime = 10:00 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" title=" stime = 10:00 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" coords="868,320,868,335,925,335,925,320,868,320,"/>
+<Area shape="poly" alt=" stime = 9:30 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" title=" stime = 9:30 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" coords="602,320,602,335,659,335,659,320,602,320,"/>
+<Area shape="poly" alt=" stime = 9:00 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" title=" stime = 9:00 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" coords="336,320,336,335,393,335,393,320,336,320,"/>
+<Area shape="poly" alt=" stime = 11:00 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" title=" stime = 11:00 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" coords="1401,440,1401,455,1466,455,1466,440,1401,440,"/>
+<Area shape="poly" alt=" stime = 10:00 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" title=" stime = 10:00 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" coords="868,440,868,455,933,455,933,440,868,440,"/>
+<Area shape="poly" alt=" stime = 9:30 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" title=" stime = 9:30 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" coords="602,440,602,455,659,455,659,440,602,440,"/>
+<Area shape="poly" alt=" stime = 8:30 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" title=" stime = 8:30 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" coords="69,440,69,455,126,455,126,440,69,440,"/>
+<Area shape="poly" alt=" stime = 9:30 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Conf. Ctr., 206" title=" stime = 9:30 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Conf. Ctr., 206" coords="602,560,602,575,659,575,659,560,602,560,"/>
+<Area shape="poly" alt=" stime = 8:30 AM 
+ tracksb = Hands on Workshops - Conf. Ctr., Auditorium" title=" stime = 8:30 AM 
+ tracksb = Hands on Workshops - Conf. Ctr., Auditorium" coords="69,679,69,694,126,694,126,679,69,679,"/>
+<Area shape="poly" alt=" stime = 11:00 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" title=" stime = 11:00 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" coords="1401,799,1401,814,1466,814,1466,799,1401,799,"/>
+<Area shape="poly" alt=" stime = 10:30 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" title=" stime = 10:30 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" coords="1135,799,1135,814,1200,814,1200,799,1135,799,"/>
+<Area shape="poly" alt=" stime = 10:00 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" title=" stime = 10:00 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" coords="868,799,868,814,925,814,925,799,868,799,"/>
+<Area shape="poly" alt=" stime = 9:30 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" title=" stime = 9:30 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" coords="602,799,602,814,659,814,659,799,602,799,"/>
+<Area shape="poly" alt=" stime = 9:00 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" title=" stime = 9:00 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" coords="336,799,336,814,393,814,393,799,336,799,"/>
+<Area shape="poly" alt=" stime = 11:00 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" title=" stime = 11:00 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" coords="1401,919,1401,934,1466,934,1466,919,1401,919,"/>
+<Area shape="poly" alt=" stime = 10:00 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" title=" stime = 10:00 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" coords="868,919,868,934,925,934,925,919,868,919,"/>
+<Area shape="poly" alt=" stime = 9:00 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" title=" stime = 9:00 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" coords="336,919,336,934,393,934,393,919,336,919,"/>
+<Area shape="poly" alt=" stime = 8:30 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" title=" stime = 8:30 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" coords="69,919,69,934,126,934,126,919,69,919,"/>
+<Area shape="poly" alt=" stime = 10:30 AM 
+ tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206" title=" stime = 10:30 AM 
+ tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206" coords="1135,1039,1135,1054,1200,1054,1200,1039,1135,1039,"/>
+<Area shape="poly" alt=" stime = 8:30 AM 
+ tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206" title=" stime = 8:30 AM 
+ tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206" coords="69,1039,69,1054,126,1054,126,1039,69,1039,"/>
+<Area shape="poly" alt=" stime = 11:00 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" title=" stime = 11:00 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" coords="1401,1159,1401,1174,1466,1174,1466,1159,1401,1159,"/>
+<Area shape="poly" alt=" stime = 10:30 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" title=" stime = 10:30 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" coords="1135,1159,1135,1174,1200,1174,1200,1159,1135,1159,"/>
+<Area shape="poly" alt=" stime = 10:00 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" title=" stime = 10:00 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" coords="868,1159,868,1174,933,1174,933,1159,868,1159,"/>
+<Area shape="poly" alt=" stime = 9:30 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" title=" stime = 9:30 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" coords="602,1159,602,1174,659,1174,659,1159,602,1159,"/>
+<Area shape="poly" alt=" stime = 8:30 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" title=" stime = 8:30 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" coords="69,1159,69,1174,126,1174,126,1159,69,1159,"/>
+<Area shape="poly" alt=" etime = 11:30 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" title=" etime = 11:30 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" coords="1604,200,1604,215,1654,215,1654,200,1604,200,"/>
+<Area shape="poly" alt=" etime = 11:00 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" title=" etime = 11:00 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" coords="1326,200,1326,215,1387,215,1387,200,1326,200,"/>
+<Area shape="poly" alt=" etime = 10:00 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" title=" etime = 10:00 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" coords="821,200,821,215,855,215,855,200,821,200,"/>
+<Area shape="poly" alt=" etime = 9:00 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" title=" etime = 9:00 AM 
+ tracksb = Visualization &amp; Reporting - Main Bldg., 103" coords="265,200,265,230,322,230,322,200,265,200,"/>
+<Area shape="poly" alt=" etime = 11:30 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" title=" etime = 11:30 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" coords="1614,320,1614,335,1654,335,1654,320,1614,320,"/>
+<Area shape="poly" alt=" etime = 11:00 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" title=" etime = 11:00 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" coords="1358,320,1358,335,1387,335,1387,320,1358,320,"/>
+<Area shape="poly" alt=" etime = 10:30 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" title=" etime = 10:30 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" coords="1081,320,1081,335,1121,335,1121,320,1081,320,"/>
+<Area shape="poly" alt=" etime = 10:00 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" title=" etime = 10:00 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" coords="804,320,804,335,855,335,855,320,804,320,"/>
+<Area shape="poly" alt=" etime = 9:30 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" title=" etime = 9:30 AM 
+ tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209" coords="526,320,526,350,588,350,588,320,526,320,"/>
+<Area shape="poly" alt=" etime = 11:30 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" title=" etime = 11:30 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" coords="1609,440,1609,455,1654,455,1654,440,1609,440,"/>
+<Area shape="poly" alt=" etime = 11:00 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" title=" etime = 11:00 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" coords="1353,440,1353,455,1387,455,1387,440,1353,440,"/>
+<Area shape="poly" alt=" etime = 10:00 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" title=" etime = 10:00 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" coords="808,440,808,455,855,455,855,440,808,440,"/>
+<Area shape="poly" alt=" etime = 9:30 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" title=" etime = 9:30 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107" coords="535,440,535,470,588,470,588,440,535,440,"/>
+<Area shape="poly" alt=" etime = 10:30 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Conf. Ctr., 206" title=" etime = 10:30 AM 
+ tracksb = Intermediate &amp; Advanced Coding - Conf. Ctr., 206" coords="1066,560,1066,590,1121,590,1121,560,1066,560,"/>
+<Area shape="poly" alt=" etime = 10:00 AM 
+ tracksb = Hands on Workshops - Conf. Ctr., Auditorium" title=" etime = 10:00 AM 
+ tracksb = Hands on Workshops - Conf. Ctr., Auditorium" coords="800,679,800,694,855,694,855,679,800,679,"/>
+<Area shape="poly" alt=" etime = 11:30 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" title=" etime = 11:30 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" coords="1600,799,1600,814,1654,814,1654,799,1600,799,"/>
+<Area shape="poly" alt=" etime = 11:00 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" title=" etime = 11:00 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" coords="1375,799,1375,814,1387,814,1387,799,1375,799,"/>
+<Area shape="poly" alt=" etime = 10:30 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" title=" etime = 10:30 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" coords="1095,799,1095,814,1121,814,1121,799,1095,799,"/>
+<Area shape="poly" alt=" etime = 10:00 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" title=" etime = 10:00 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" coords="805,799,805,814,855,814,855,799,805,799,"/>
+<Area shape="poly" alt=" etime = 9:30 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" title=" etime = 9:30 AM 
+ tracksb = Foundational Coding Skills - Conf. Ctr., 208" coords="548,799,548,814,588,814,588,799,548,799,"/>
+<Area shape="poly" alt=" etime = 11:30 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" title=" etime = 11:30 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" coords="1602,919,1602,934,1654,934,1654,919,1602,919,"/>
+<Area shape="poly" alt=" etime = 11:00 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" title=" etime = 11:00 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" coords="1344,919,1344,934,1387,934,1387,919,1344,919,"/>
+<Area shape="poly" alt=" etime = 9:30 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" title=" etime = 9:30 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" coords="544,919,544,934,588,934,588,919,544,919,"/>
+<Area shape="poly" alt=" etime = 9:00 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" title=" etime = 9:00 AM 
+ tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207" coords="282,919,282,934,322,934,322,919,282,919,"/>
+<Area shape="poly" alt=" etime = 11:00 AM 
+ tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206" title=" etime = 11:00 AM 
+ tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206" coords="1352,1039,1352,1054,1387,1054,1387,1039,1352,1039,"/>
+<Area shape="poly" alt=" etime = 9:30 AM 
+ tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206" title=" etime = 9:30 AM 
+ tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206" coords="527,1039,527,1054,588,1054,588,1039,527,1039,"/>
+<Area shape="poly" alt=" etime = 11:30 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" title=" etime = 11:30 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" coords="1605,1159,1605,1174,1654,1174,1654,1159,1605,1159,"/>
+<Area shape="poly" alt=" etime = 11:00 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" title=" etime = 11:00 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" coords="1336,1159,1336,1189,1387,1189,1387,1159,1336,1159,"/>
+<Area shape="poly" alt=" etime = 10:30 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" title=" etime = 10:30 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" coords="1102,1159,1102,1174,1121,1174,1121,1159,1102,1159,"/>
+<Area shape="poly" alt=" etime = 10:00 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" title=" etime = 10:00 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" coords="807,1159,807,1174,855,1174,855,1159,807,1159,"/>
+<Area shape="poly" alt=" etime = 9:30 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" title=" etime = 9:30 AM 
+ tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205" coords="533,1159,533,1189,588,1189,588,1159,533,1159,"/>
+<Area shape="poly" alt=" tracksb = Visualization &amp; Reporting - Main Bldg., 103  
+ etime = 11:30 AM  
+ stime = 11:00 AM " title=" tracksb = Visualization &amp; Reporting - Main Bldg., 103  
+ etime = 11:30 AM  
+ stime = 11:00 AM " href="PresentationSummaries/PaperInfo109.html " target="_SELF" coords="1395,152,1662,152,1662,251,1395,251,1395,152,"/>
+<Area shape="poly" alt=" tracksb = Visualization &amp; Reporting - Main Bldg., 103  
+ etime = 11:30 AM  
+ stime = 11:00 AM " title=" tracksb = Visualization &amp; Reporting - Main Bldg., 103  
+ etime = 11:30 AM  
+ stime = 11:00 AM " href="PresentationSummaries/PaperInfo109.html " target="_SELF" coords="1395,152,1662,152,1662,251,1395,251,1395,152,"/>
+<Area shape="poly" alt=" tracksb = Visualization &amp; Reporting - Main Bldg., 103  
+ etime = 11:00 AM  
+ stime = 10:00 AM " title=" tracksb = Visualization &amp; Reporting - Main Bldg., 103  
+ etime = 11:00 AM  
+ stime = 10:00 AM " href="PresentationSummaries/PaperInfo100.html " target="_SELF" coords="862,152,1396,152,1396,251,862,251,862,152,"/>
+<Area shape="poly" alt=" tracksb = Visualization &amp; Reporting - Main Bldg., 103  
+ etime = 11:00 AM  
+ stime = 10:00 AM " title=" tracksb = Visualization &amp; Reporting - Main Bldg., 103  
+ etime = 11:00 AM  
+ stime = 10:00 AM " href="PresentationSummaries/PaperInfo100.html " target="_SELF" coords="862,152,1396,152,1396,251,862,251,862,152,"/>
+<Area shape="poly" alt=" tracksb = Visualization &amp; Reporting - Main Bldg., 103  
+ etime = 10:00 AM  
+ stime = 9:00 AM " title=" tracksb = Visualization &amp; Reporting - Main Bldg., 103  
+ etime = 10:00 AM  
+ stime = 9:00 AM " href="PresentationSummaries/PaperInfo89.html " target="_SELF" coords="329,152,863,152,863,251,329,251,329,152,"/>
+<Area shape="poly" alt=" tracksb = Visualization &amp; Reporting - Main Bldg., 103  
+ etime = 10:00 AM  
+ stime = 9:00 AM " title=" tracksb = Visualization &amp; Reporting - Main Bldg., 103  
+ etime = 10:00 AM  
+ stime = 9:00 AM " href="PresentationSummaries/PaperInfo89.html " target="_SELF" coords="329,152,863,152,863,251,329,251,329,152,"/>
+<Area shape="poly" alt=" tracksb = Visualization &amp; Reporting - Main Bldg., 103  
+ etime = 9:00 AM  
+ stime = 8:30 AM " title=" tracksb = Visualization &amp; Reporting - Main Bldg., 103  
+ etime = 9:00 AM  
+ stime = 8:30 AM " href="PresentationSummaries/PaperInfo84.html " target="_SELF" coords="63,152,330,152,330,251,63,251,63,152,"/>
+<Area shape="poly" alt=" tracksb = Visualization &amp; Reporting - Main Bldg., 103  
+ etime = 9:00 AM  
+ stime = 8:30 AM " title=" tracksb = Visualization &amp; Reporting - Main Bldg., 103  
+ etime = 9:00 AM  
+ stime = 8:30 AM " href="PresentationSummaries/PaperInfo84.html " target="_SELF" coords="63,152,330,152,330,251,63,251,63,152,"/>
+<Area shape="poly" alt=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 11:30 AM  
+ stime = 11:00 AM " title=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 11:30 AM  
+ stime = 11:00 AM " href="PresentationSummaries/PaperInfo110.html " target="_SELF" coords="1395,272,1662,272,1662,371,1395,371,1395,272,"/>
+<Area shape="poly" alt=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 11:30 AM  
+ stime = 11:00 AM " title=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 11:30 AM  
+ stime = 11:00 AM " href="PresentationSummaries/PaperInfo110.html " target="_SELF" coords="1395,272,1662,272,1662,371,1395,371,1395,272,"/>
+<Area shape="poly" alt=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 11:00 AM  
+ stime = 10:30 AM " title=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 11:00 AM  
+ stime = 10:30 AM " href="PresentationSummaries/PaperInfo106.html " target="_SELF" coords="1128,272,1396,272,1396,371,1128,371,1128,272,"/>
+<Area shape="poly" alt=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 11:00 AM  
+ stime = 10:30 AM " title=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 11:00 AM  
+ stime = 10:30 AM " href="PresentationSummaries/PaperInfo106.html " target="_SELF" coords="1128,272,1396,272,1396,371,1128,371,1128,272,"/>
+<Area shape="poly" alt=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 10:30 AM  
+ stime = 10:00 AM " title=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 10:30 AM  
+ stime = 10:00 AM " href="PresentationSummaries/PaperInfo99.html " target="_SELF" coords="862,272,1129,272,1129,371,862,371,862,272,"/>
+<Area shape="poly" alt=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 10:30 AM  
+ stime = 10:00 AM " title=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 10:30 AM  
+ stime = 10:00 AM " href="PresentationSummaries/PaperInfo99.html " target="_SELF" coords="862,272,1129,272,1129,371,862,371,862,272,"/>
+<Area shape="poly" alt=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 10:00 AM  
+ stime = 9:30 AM " title=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 10:00 AM  
+ stime = 9:30 AM " href="PresentationSummaries/PaperInfo94.html " target="_SELF" coords="596,272,863,272,863,371,596,371,596,272,"/>
+<Area shape="poly" alt=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 10:00 AM  
+ stime = 9:30 AM " title=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 10:00 AM  
+ stime = 9:30 AM " href="PresentationSummaries/PaperInfo94.html " target="_SELF" coords="596,272,863,272,863,371,596,371,596,272,"/>
+<Area shape="poly" alt=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 9:30 AM  
+ stime = 9:00 AM " title=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 9:30 AM  
+ stime = 9:00 AM " href="PresentationSummaries/PaperInfo88.html " target="_SELF" coords="329,272,597,272,597,371,329,371,329,272,"/>
+<Area shape="poly" alt=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 9:30 AM  
+ stime = 9:00 AM " title=" tracksb = Statistics, Modeling, &amp; Analysis - Conf. Ctr., 209  
+ etime = 9:30 AM  
+ stime = 9:00 AM " href="PresentationSummaries/PaperInfo88.html " target="_SELF" coords="329,272,597,272,597,371,329,371,329,272,"/>
+<Area shape="poly" alt=" tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107  
+ etime = 11:30 AM  
+ stime = 11:00 AM " title=" tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107  
+ etime = 11:30 AM  
+ stime = 11:00 AM " href="PresentationSummaries/PaperInfo112.html " target="_SELF" coords="1395,391,1662,391,1662,491,1395,491,1395,391,"/>
+<Area shape="poly" alt=" tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107  
+ etime = 11:30 AM  
+ stime = 11:00 AM " title=" tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107  
+ etime = 11:30 AM  
+ stime = 11:00 AM " href="PresentationSummaries/PaperInfo112.html " target="_SELF" coords="1395,391,1662,391,1662,491,1395,491,1395,391,"/>
+<Area shape="poly" alt=" tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107  
+ etime = 11:00 AM  
+ stime = 10:00 AM " title=" tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107  
+ etime = 11:00 AM  
+ stime = 10:00 AM " href="PresentationSummaries/PaperInfo101.html " target="_SELF" coords="862,391,1396,391,1396,491,862,491,862,391,"/>
+<Area shape="poly" alt=" tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107  
+ etime = 11:00 AM  
+ stime = 10:00 AM " title=" tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107  
+ etime = 11:00 AM  
+ stime = 10:00 AM " href="PresentationSummaries/PaperInfo101.html " target="_SELF" coords="862,391,1396,391,1396,491,862,491,862,391,"/>
+<Area shape="poly" alt=" tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107  
+ etime = 10:00 AM  
+ stime = 9:30 AM " title=" tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107  
+ etime = 10:00 AM  
+ stime = 9:30 AM " href="PresentationSummaries/PaperInfo92.html " target="_SELF" coords="596,391,863,391,863,491,596,491,596,391,"/>
+<Area shape="poly" alt=" tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107  
+ etime = 10:00 AM  
+ stime = 9:30 AM " title=" tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107  
+ etime = 10:00 AM  
+ stime = 9:30 AM " href="PresentationSummaries/PaperInfo92.html " target="_SELF" coords="596,391,863,391,863,491,596,491,596,391,"/>
+<Area shape="poly" alt=" tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107  
+ etime = 9:30 AM  
+ stime = 8:30 AM " title=" tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107  
+ etime = 9:30 AM  
+ stime = 8:30 AM " href="PresentationSummaries/PaperInfo83.html " target="_SELF" coords="63,391,597,391,597,491,63,491,63,391,"/>
+<Area shape="poly" alt=" tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107  
+ etime = 9:30 AM  
+ stime = 8:30 AM " title=" tracksb = Intermediate &amp; Advanced Coding - Main Bldg, 107  
+ etime = 9:30 AM  
+ stime = 8:30 AM " href="PresentationSummaries/PaperInfo83.html " target="_SELF" coords="63,391,597,391,597,491,63,491,63,391,"/>
+<Area shape="poly" alt=" tracksb = Intermediate &amp; Advanced Coding - Conf. Ctr., 206  
+ etime = 10:30 AM  
+ stime = 9:30 AM " title=" tracksb = Intermediate &amp; Advanced Coding - Conf. Ctr., 206  
+ etime = 10:30 AM  
+ stime = 9:30 AM " href="PresentationSummaries/PaperInfo95.html " target="_SELF" coords="596,511,1129,511,1129,610,596,610,596,511,"/>
+<Area shape="poly" alt=" tracksb = Intermediate &amp; Advanced Coding - Conf. Ctr., 206  
+ etime = 10:30 AM  
+ stime = 9:30 AM " title=" tracksb = Intermediate &amp; Advanced Coding - Conf. Ctr., 206  
+ etime = 10:30 AM  
+ stime = 9:30 AM " href="PresentationSummaries/PaperInfo95.html " target="_SELF" coords="596,511,1129,511,1129,610,596,610,596,511,"/>
+<Area shape="poly" alt=" tracksb = Hands on Workshops - Conf. Ctr., Auditorium  
+ etime = 10:00 AM  
+ stime = 8:30 AM " title=" tracksb = Hands on Workshops - Conf. Ctr., Auditorium  
+ etime = 10:00 AM  
+ stime = 8:30 AM " href="PresentationSummaries/PaperInfo87.html " target="_SELF" coords="63,631,863,631,863,730,63,730,63,631,"/>
+<Area shape="poly" alt=" tracksb = Hands on Workshops - Conf. Ctr., Auditorium  
+ etime = 10:00 AM  
+ stime = 8:30 AM " title=" tracksb = Hands on Workshops - Conf. Ctr., Auditorium  
+ etime = 10:00 AM  
+ stime = 8:30 AM " href="PresentationSummaries/PaperInfo87.html " target="_SELF" coords="63,631,863,631,863,730,63,730,63,631,"/>
+<Area shape="poly" alt=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 11:30 AM  
+ stime = 11:00 AM " title=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 11:30 AM  
+ stime = 11:00 AM " href="PresentationSummaries/PaperInfo113.html " target="_SELF" coords="1395,751,1662,751,1662,850,1395,850,1395,751,"/>
+<Area shape="poly" alt=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 11:30 AM  
+ stime = 11:00 AM " title=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 11:30 AM  
+ stime = 11:00 AM " href="PresentationSummaries/PaperInfo113.html " target="_SELF" coords="1395,751,1662,751,1662,850,1395,850,1395,751,"/>
+<Area shape="poly" alt=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 11:00 AM  
+ stime = 10:30 AM " title=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 11:00 AM  
+ stime = 10:30 AM " href="PresentationSummaries/PaperInfo105.html " target="_SELF" coords="1128,751,1396,751,1396,850,1128,850,1128,751,"/>
+<Area shape="poly" alt=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 11:00 AM  
+ stime = 10:30 AM " title=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 11:00 AM  
+ stime = 10:30 AM " href="PresentationSummaries/PaperInfo105.html " target="_SELF" coords="1128,751,1396,751,1396,850,1128,850,1128,751,"/>
+<Area shape="poly" alt=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 10:30 AM  
+ stime = 10:00 AM " title=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 10:30 AM  
+ stime = 10:00 AM " href="PresentationSummaries/PaperInfo98.html " target="_SELF" coords="862,751,1129,751,1129,850,862,850,862,751,"/>
+<Area shape="poly" alt=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 10:30 AM  
+ stime = 10:00 AM " title=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 10:30 AM  
+ stime = 10:00 AM " href="PresentationSummaries/PaperInfo98.html " target="_SELF" coords="862,751,1129,751,1129,850,862,850,862,751,"/>
+<Area shape="poly" alt=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 10:00 AM  
+ stime = 9:30 AM " title=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 10:00 AM  
+ stime = 9:30 AM " href="PresentationSummaries/PaperInfo93.html " target="_SELF" coords="596,751,863,751,863,850,596,850,596,751,"/>
+<Area shape="poly" alt=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 10:00 AM  
+ stime = 9:30 AM " title=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 10:00 AM  
+ stime = 9:30 AM " href="PresentationSummaries/PaperInfo93.html " target="_SELF" coords="596,751,863,751,863,850,596,850,596,751,"/>
+<Area shape="poly" alt=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 9:30 AM  
+ stime = 9:00 AM " title=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 9:30 AM  
+ stime = 9:00 AM " href="PresentationSummaries/PaperInfo90.html " target="_SELF" coords="329,751,597,751,597,850,329,850,329,751,"/>
+<Area shape="poly" alt=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 9:30 AM  
+ stime = 9:00 AM " title=" tracksb = Foundational Coding Skills - Conf. Ctr., 208  
+ etime = 9:30 AM  
+ stime = 9:00 AM " href="PresentationSummaries/PaperInfo90.html " target="_SELF" coords="329,751,597,751,597,850,329,850,329,751,"/>
+<Area shape="poly" alt=" tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207  
+ etime = 11:30 AM  
+ stime = 11:00 AM " title=" tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207  
+ etime = 11:30 AM  
+ stime = 11:00 AM " href="PresentationSummaries/PaperInfo111.html " target="_SELF" coords="1395,870,1662,870,1662,970,1395,970,1395,870,"/>
+<Area shape="poly" alt=" tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207  
+ etime = 11:30 AM  
+ stime = 11:00 AM " title=" tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207  
+ etime = 11:30 AM  
+ stime = 11:00 AM " href="PresentationSummaries/PaperInfo111.html " target="_SELF" coords="1395,870,1662,870,1662,970,1395,970,1395,870,"/>
+<Area shape="poly" alt=" tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207  
+ etime = 11:00 AM  
+ stime = 10:00 AM " title=" tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207  
+ etime = 11:00 AM  
+ stime = 10:00 AM " href="PresentationSummaries/PaperInfo97.html " target="_SELF" coords="862,870,1396,870,1396,970,862,970,862,870,"/>
+<Area shape="poly" alt=" tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207  
+ etime = 11:00 AM  
+ stime = 10:00 AM " title=" tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207  
+ etime = 11:00 AM  
+ stime = 10:00 AM " href="PresentationSummaries/PaperInfo97.html " target="_SELF" coords="862,870,1396,870,1396,970,862,970,862,870,"/>
+<Area shape="poly" alt=" tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207  
+ etime = 9:30 AM  
+ stime = 9:00 AM " title=" tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207  
+ etime = 9:30 AM  
+ stime = 9:00 AM " href="PresentationSummaries/PaperInfo91.html " target="_SELF" coords="329,870,597,870,597,970,329,970,329,870,"/>
+<Area shape="poly" alt=" tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207  
+ etime = 9:30 AM  
+ stime = 9:00 AM " title=" tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207  
+ etime = 9:30 AM  
+ stime = 9:00 AM " href="PresentationSummaries/PaperInfo91.html " target="_SELF" coords="329,870,597,870,597,970,329,970,329,870,"/>
+<Area shape="poly" alt=" tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207  
+ etime = 9:00 AM  
+ stime = 8:30 AM " title=" tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207  
+ etime = 9:00 AM  
+ stime = 8:30 AM " href="PresentationSummaries/PaperInfo82.html " target="_SELF" coords="63,870,330,870,330,970,63,970,63,870,"/>
+<Area shape="poly" alt=" tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207  
+ etime = 9:00 AM  
+ stime = 8:30 AM " title=" tracksb = Data Collection, Management, &amp; Manipulation - Conf. Ctr., 207  
+ etime = 9:00 AM  
+ stime = 8:30 AM " href="PresentationSummaries/PaperInfo82.html " target="_SELF" coords="63,870,330,870,330,970,63,970,63,870,"/>
+<Area shape="poly" alt=" tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206  
+ etime = 11:00 AM  
+ stime = 10:30 AM " title=" tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206  
+ etime = 11:00 AM  
+ stime = 10:30 AM " href="PresentationSummaries/PaperInfo107.html " target="_SELF" coords="1128,990,1396,990,1396,1089,1128,1089,1128,990,"/>
+<Area shape="poly" alt=" tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206  
+ etime = 11:00 AM  
+ stime = 10:30 AM " title=" tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206  
+ etime = 11:00 AM  
+ stime = 10:30 AM " href="PresentationSummaries/PaperInfo107.html " target="_SELF" coords="1128,990,1396,990,1396,1089,1128,1089,1128,990,"/>
+<Area shape="poly" alt=" tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206  
+ etime = 9:30 AM  
+ stime = 8:30 AM " title=" tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206  
+ etime = 9:30 AM  
+ stime = 8:30 AM " href="PresentationSummaries/PaperInfo85.html " target="_SELF" coords="63,990,597,990,597,1089,63,1089,63,990,"/>
+<Area shape="poly" alt=" tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206  
+ etime = 9:30 AM  
+ stime = 8:30 AM " title=" tracksb = Careers, Training, &amp; Education - Conf. Ctr., 206  
+ etime = 9:30 AM  
+ stime = 8:30 AM " href="PresentationSummaries/PaperInfo85.html " target="_SELF" coords="63,990,597,990,597,1089,63,1089,63,990,"/>
+<Area shape="poly" alt=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 11:30 AM  
+ stime = 11:00 AM " title=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 11:30 AM  
+ stime = 11:00 AM " href="PresentationSummaries/PaperInfo108.html " target="_SELF" coords="1395,1110,1662,1110,1662,1209,1395,1209,1395,1110,"/>
+<Area shape="poly" alt=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 11:30 AM  
+ stime = 11:00 AM " title=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 11:30 AM  
+ stime = 11:00 AM " href="PresentationSummaries/PaperInfo108.html " target="_SELF" coords="1395,1110,1662,1110,1662,1209,1395,1209,1395,1110,"/>
+<Area shape="poly" alt=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 11:00 AM  
+ stime = 10:30 AM " title=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 11:00 AM  
+ stime = 10:30 AM " href="PresentationSummaries/PaperInfo104.html " target="_SELF" coords="1128,1110,1396,1110,1396,1209,1128,1209,1128,1110,"/>
+<Area shape="poly" alt=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 11:00 AM  
+ stime = 10:30 AM " title=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 11:00 AM  
+ stime = 10:30 AM " href="PresentationSummaries/PaperInfo104.html " target="_SELF" coords="1128,1110,1396,1110,1396,1209,1128,1209,1128,1110,"/>
+<Area shape="poly" alt=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 10:30 AM  
+ stime = 10:00 AM " title=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 10:30 AM  
+ stime = 10:00 AM " href="PresentationSummaries/PaperInfo102.html " target="_SELF" coords="862,1110,1129,1110,1129,1209,862,1209,862,1110,"/>
+<Area shape="poly" alt=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 10:30 AM  
+ stime = 10:00 AM " title=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 10:30 AM  
+ stime = 10:00 AM " href="PresentationSummaries/PaperInfo102.html " target="_SELF" coords="862,1110,1129,1110,1129,1209,862,1209,862,1110,"/>
+<Area shape="poly" alt=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 10:00 AM  
+ stime = 9:30 AM " title=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 10:00 AM  
+ stime = 9:30 AM " href="PresentationSummaries/PaperInfo96.html " target="_SELF" coords="596,1110,863,1110,863,1209,596,1209,596,1110,"/>
+<Area shape="poly" alt=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 10:00 AM  
+ stime = 9:30 AM " title=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 10:00 AM  
+ stime = 9:30 AM " href="PresentationSummaries/PaperInfo96.html " target="_SELF" coords="596,1110,863,1110,863,1209,596,1209,596,1110,"/>
+<Area shape="poly" alt=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 9:30 AM  
+ stime = 8:30 AM " title=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 9:30 AM  
+ stime = 8:30 AM " href="PresentationSummaries/PaperInfo86.html " target="_SELF" coords="63,1110,597,1110,597,1209,63,1209,63,1110,"/>
+<Area shape="poly" alt=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 9:30 AM  
+ stime = 8:30 AM " title=" tracksb = AI &amp; Emerging Technologies - Conf. Ctr., 205  
+ etime = 9:30 AM  
+ stime = 8:30 AM " href="PresentationSummaries/PaperInfo86.html " target="_SELF" coords="63,1110,597,1110,597,1209,63,1209,63,1110,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="SaturdayAM1.png" style=" height: 1296px; width: 18in;" border="0" usemap="#SaturdayAM1" class="c">
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>
