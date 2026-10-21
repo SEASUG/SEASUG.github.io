@@ -1664,13 +1664,13 @@ TD, TH {vertical-align: top }
 <a name="IDX"></a>
 <table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
 <tr>
-<td class="l systemtitle" style=" font-family: 'Montserrat Black'; font-size: 18pt; font-style: normal; font-weight: normal;">Creating CONSORT Diagram in R vs. SAS: A More Efficient Approach</td>
+<td class="l systemtitle" style=" font-family: 'Montserrat Black'; font-size: 18pt; font-style: normal; font-weight: normal;">From One-Time Standardization to Automated ETL: A Metadata-Driven Approach in SAS</td>
 </tr>
 <tr>
 <td class="l systemtitle2" style=" font-family: Montserrat; font-size: 16pt; font-style: normal; font-weight: normal;">October 23, 2026: 2:00 PM - 2:30 PM</td>
 </tr>
 <tr>
-<td class="l systemtitle3" style=" font-family: Montserrat; font-size: 16pt; font-style: normal; font-weight: normal;">Foundational Coding Skills, Conf. Ctr., 207</td>
+<td class="l systemtitle3" style=" font-family: Montserrat; font-size: 16pt; font-style: normal; font-weight: normal;">Data Collection, Management, &amp; Manipulation, Conf. Ctr., 206</td>
 </tr>
 </table><br>
 <div>
@@ -1688,8 +1688,8 @@ TD, TH {vertical-align: top }
 </thead>
 <tbody>
 <tr>
-<td class="l data" style=" font-family: Montserrat; font-size: 14pt; width: 2.5in;">Anil Yelike,  Sumalatha Vaddepalli</td>
-<td class="l data" style=" font-family: Montserrat; font-size: 14pt;">A CONSORT (Consolidated Standards of Reporting Trials) diagram provides a clear visual summary of how participants moved through a randomized clinical trial, from initial screening to final analysis. It helps readers quickly understand how study groups were formed, where participants were excluded or lost to follow‑up, and the overall transparency of the trial. These diagrams are commonly built in SAS using custom layouts, a process that can be time consuming, difficult to revise, and hard to keep consistent across studies.This presentation compares traditional SAS‑based methods with an automated approach using R. By generating participant counts directly from study data, R allows CONSORT diagrams to be created quickly with minimal effort. The automated process improves consistency, reduces rework when data changes, and supports reproducible reporting. Overall, creating CONSORT diagrams in R offers a more efficient and scalable alternative for modern clinical trial workflows.</td>
+<td class="l data" style=" font-family: Montserrat; font-size: 14pt; width: 2.5in;">Divya Gadde</td>
+<td class="l data" style=" font-family: Montserrat; font-size: 14pt;">Background:Recurring administrative data deliveries pose challenges distinct from initial dataset creation. Once a SAS structure is established, monthly deltas must be incorporated without schema drift. Vendor files arrive as large text extracts with only generic metadata and no true field-level dictionary, requiring an internal metadata standard for reliable ETL.Objective:To develop a metadata-driven SAS framework for validating and standardizing recurring deliveries.Methods:After standardizing a historical dataset, we built a metadata table of variable names, types, and approved lengths, with a 10% growth buffer for character fields. Each delta is imported at vendor-declared maximum widths to prevent data loss, then profiled and compared against the standard to flag new/missing variables, type mismatches, or excess lengths. Routine deltas are conformed and appended; exceptions are held for review rather than silently truncated or expanded, with changes documented via versioned records.Results:&amp;nbsp; This metadata-driven process helped in early warning of schema changes and reducing manual intervention. The buffer allows controlled growth while preventing unchecked expansion, with faster processing and consistent variable lengths across all years of data.Conclusion:Metadata can function as an active ETL control, not just documentation &amp;mdash; compensating for limited vendor documentation while enabling scalable validation and consistent integration of recurring deliveries.</td>
 </tr>
 </tbody>
 </table>

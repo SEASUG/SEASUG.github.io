@@ -1664,13 +1664,13 @@ TD, TH {vertical-align: top }
 <a name="IDX"></a>
 <table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
 <tr>
-<td class="l systemtitle" style=" font-family: 'Montserrat Black'; font-size: 18pt; font-style: normal; font-weight: normal;">PROC PPF: Past, Present, and Future</td>
+<td class="l systemtitle" style=" font-family: 'Montserrat Black'; font-size: 18pt; font-style: normal; font-weight: normal;">A Code Review Framework for AI-Generated SAS Utility Macros</td>
 </tr>
 <tr>
 <td class="l systemtitle2" style=" font-family: Montserrat; font-size: 16pt; font-style: normal; font-weight: normal;">October 24, 2026: 10:00 AM - 10:30 AM</td>
 </tr>
 <tr>
-<td class="l systemtitle3" style=" font-family: Montserrat; font-size: 16pt; font-style: normal; font-weight: normal;">Statistics, Modeling, &amp; Analysis, Conf. Ctr., 209</td>
+<td class="l systemtitle3" style=" font-family: Montserrat; font-size: 16pt; font-style: normal; font-weight: normal;">AI &amp; Emerging Technologies, Conf. Ctr., 205</td>
 </tr>
 </table><br>
 <div>
@@ -1688,8 +1688,8 @@ TD, TH {vertical-align: top }
 </thead>
 <tbody>
 <tr>
-<td class="l data" style=" font-family: Montserrat; font-size: 14pt; width: 2.5in;">Danny Modlin</td>
-<td class="l data" style=" font-family: Montserrat; font-size: 14pt;">As SAS celebrates its 50th anniversary, take a moment to consider the past, present, and future of statistical programming. In this presentation, we look back at our roots, the SAS procedural programming language, reminisce over graphical user interfaces that changed the way we interact with code, and look to the future where AI tools assist with our programming based on an iterative, back-and-forth conversation with SAS copilots.</td>
+<td class="l data" style=" font-family: Montserrat; font-size: 14pt; width: 2.5in;">Zhengyang Shi</td>
+<td class="l data" style=" font-family: Montserrat; font-size: 14pt;">BackgroundAI coding agents generate SAS utility macros rapidly, but such macros enter shared libraries through informal inspection rather than structured review. Unlike ADaM datasets or TLF programs, utility macros fall outside compliance-mandated workflows. No standard defines what to evaluate before library adoption.ObjectiveTo propose a dimension-based code review framework for SAS utility macros and characterize which failure modes AI detects versus those requiring human review.MethodsA five-dimension framework was developed: interface contract, scope and side effects, macro quoting and variable handling, documentation completeness, and backward compatibility. Each dimension was operationalized as a SAS-specific checklist. An AI coding agent served as first-pass reviewer to assess coverage and gaps.ResultsThe AI reliably flagged structural and documentation gaps but missed SAS-specific failure modes: inverted return semantics, macro boolean misuse, and DATA step/SQL syntax incompatibilities. These blind spots cluster in the scope, side effects, and quoting dimensions where human review adds irreplaceable value.ConclusionA five-dimension checklist offers a lightweight standard that complements AI-assisted development. By exposing what AI misses, the framework gives clinical programming teams a practical quality gate before shared library adoption.</td>
 </tr>
 </tbody>
 </table>
