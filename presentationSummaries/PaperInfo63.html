@@ -1664,13 +1664,13 @@ TD, TH {vertical-align: top }
 <a name="IDX"></a>
 <table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
 <tr>
-<td class="l systemtitle" style=" font-family: 'Montserrat Black'; font-size: 18pt; font-style: normal; font-weight: normal;">Writing SAS Code That Writes SAS Code: Dynamic Programming with the SAS Macro Language</td>
+<td class="l systemtitle" style=" font-family: 'Montserrat Black'; font-size: 18pt; font-style: normal; font-weight: normal;">From One-Time Standardization to Automated ETL: A Metadata-Driven Approach in SAS</td>
 </tr>
 <tr>
 <td class="l systemtitle2" style=" font-family: Montserrat; font-size: 16pt; font-style: normal; font-weight: normal;">October 23, 2026: 2:00 PM - 2:30 PM</td>
 </tr>
 <tr>
-<td class="l systemtitle3" style=" font-family: Montserrat; font-size: 16pt; font-style: normal; font-weight: normal;">Intermediate &amp; Advanced Coding, Main Bldg, 107</td>
+<td class="l systemtitle3" style=" font-family: Montserrat; font-size: 16pt; font-style: normal; font-weight: normal;">Data Collection, Management, &amp; Manipulation, Conf. Ctr., 206</td>
 </tr>
 </table><br>
 <div>
@@ -1688,8 +1688,8 @@ TD, TH {vertical-align: top }
 </thead>
 <tbody>
 <tr>
-<td class="l data" style=" font-family: Montserrat; font-size: 14pt; width: 2.5in;">Pratap Kunwar</td>
-<td class="l data" style=" font-family: Montserrat; font-size: 14pt;">SAS macro programming is often introduced as a way to eliminate repetitive code, but its real value extends far beyond simple code reuse. When combined with DATA step programming, PROC SQL, SAS metadata, and macro processing techniques, the SAS Macro Language can transform static programs into dynamic, reusable, and scalable solutions.This paper explores practical approaches for using the SAS Macro Language to generate and control SAS code dynamically. Rather than focusing on macro syntax alone, the paper demonstrates how experienced SAS programmers can design macros that adapt to different datasets, variables, business rules, and processing requirements.Through a series of progressively advanced examples, the paper covers macro variables, iterative processing, dynamic PROC SQL, metadata-driven programming, parameter validation, macro debugging, conditional code generation, and reusable macro frameworks. Examples also demonstrate common macro programming pitfalls, including variable scope, macro quoting, unexpected macro resolution, and situations where using a macro may introduce unnecessary complexity.The paper concludes with practical guidelines for transforming a macro from a simple time-saving utility into a maintainable programming component. Attendees will gain techniques they can immediately apply to reduce repetitive programming, automate routine development tasks, and build more flexible SAS solutions.</td>
+<td class="l data" style=" font-family: Montserrat; font-size: 14pt; width: 2.5in;">Divya Gadde</td>
+<td class="l data" style=" font-family: Montserrat; font-size: 14pt;">Background:Recurring administrative data deliveries pose challenges distinct from initial dataset creation. Once a SAS structure is established, monthly deltas must be incorporated without schema drift. Vendor files arrive as large text extracts with only generic metadata and no true field-level dictionary, requiring an internal metadata standard for reliable ETL.Objective:To develop a metadata-driven SAS framework for validating and standardizing recurring deliveries.Methods:After standardizing a historical dataset, we built a metadata table of variable names, types, and approved lengths, with a 10% growth buffer for character fields. Each delta is imported at vendor-declared maximum widths to prevent data loss, then profiled and compared against the standard to flag new/missing variables, type mismatches, or excess lengths. Routine deltas are conformed and appended; exceptions are held for review rather than silently truncated or expanded, with changes documented via versioned records.Results:This metadata-driven process helped in early warning of schema changes and reducing manual intervention. The buffer allows controlled growth while preventing unchecked expansion, with faster processing and consistent variable lengths across all years of data.Conclusion:Metadata can function as an active ETL control, not just documentation &amp;mdash; compensating for limited vendor documentation while enabling scalable validation and consistent integration of recurring deliveries.</td>
 </tr>
 </tbody>
 </table>
